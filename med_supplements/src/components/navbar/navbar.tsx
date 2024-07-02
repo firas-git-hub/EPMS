@@ -3,6 +3,7 @@ import "./navbar.scss";
 import React from "react";
 import { Button } from "@mui/material";
 import VaccinesIcon from "@mui/icons-material/Vaccines";
+import { useTranslation } from "react-i18next";
 
 interface NavbarProps {
     children?: React.ReactNode;
@@ -13,6 +14,9 @@ interface NavbarProps {
 
 
 const Navbar: FC<NavbarProps> = (props) => {
+
+    const { t } = useTranslation();
+
     let name = "Medi Products";
     let pages = [
         {
@@ -24,7 +28,7 @@ const Navbar: FC<NavbarProps> = (props) => {
             path: "contactus"
         },
         {
-            name: "news",
+            name: "News",
             path: "news"
         },
         {
@@ -41,7 +45,7 @@ const Navbar: FC<NavbarProps> = (props) => {
             <div className="flex--row flagship">
                 <VaccinesIcon className="icon"></VaccinesIcon>
                 <p className="name unselectable" >
-                    {name}
+                    {t(name)}
                 </p>
             </div>
             <div className="flex--row tabs">
