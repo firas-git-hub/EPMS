@@ -1,44 +1,142 @@
 .page {
     height: 100%;
     width: 100%;
-    background-color: #cbcbcb;
-    overflow: auto;
-    position: relative;
+    max-height: calc(100% - 4.5rem);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
 
-    .imgs-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+.carousel-container:nth-child(even) {
+    background-color: #ebebeb;
+}
+
+.supplements_card {
+    height: 12rem;
+    width: 12rem;
+    margin: 5rem;
+    outline: 1px solid lightgray;
+    box-shadow: 1px 1px 20px 1px #00000030;
+    background: linear-gradient(150deg, rgb(233, 233, 233) 54%, rgba(203, 182, 206, 0.69) 83%, rgba(184, 149, 188, 0.56) 93%, rgba(101, 6, 112, 0.25) 97%, rgba(101, 6, 112, 0.5) 100%)
+}
+
+.carousel-button {
+    &:focus {
+        background-color: aqua !important;
+    }
+}
+
+.slider-container {
+    padding: 2rem;
+
+    .MuiButtonBase-root {
+        color: skyblue;
+        -webkit-tap-highlight-color: unset !important;
+
+        &:hover {
+            color: rgb(116, 177, 201);
+        }
+
+        &:focus {
+            color: skyblue;
+        }
     }
 
-    .info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: self-start;
+    .slick-prev {
+        width: auto !important;
+        height: auto !important;
 
-        h1 {
-            padding-bottom: 4rem;
-            margin: 0;
-            text-shadow: 0 0 black;
-            font-size: 4rem;
+        &::before {
+            content: unset;
         }
+    }
 
-        p {
-            width: 60%;
-            padding-bottom: 2rem;
+    .slick-next {
+        width: auto !important;
+        height: auto !important;
+
+        &::before {
+            content: unset;
         }
+    }
 
-        img {
-            height: 35rem;
-            width: auto;
-            rotate: 180deg;
+    .MuiCard-root {
+        position: relative;
+        display: block !important;
+        margin-inline: 1.5rem;
+        margin-block: 0.5rem;
+        min-width: 15rem !important;
+        min-height: 15rem !important;
+        height: 20rem;
+        border: none;
+        border-radius: 1rem;
+
+        .supplements-card-image-container {
+            display: flex;
+            justify-content: end;
+            height: 100%;
+            width: 100%;
             position: absolute;
-            bottom: 0;
-            right: 0;
         }
+
+        .MuiCardMedia-root {
+            position: relative;
+            width: min-content;
+            object-fit: contain;
+            padding: 2rem;
+        }
+
+        .MuiCardActionArea-root {
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            transition: backdrop-filter 0.25s ease-in-out;
+
+            &:hover {
+                backdrop-filter: blur(0.25rem);
+            }
+        }
+
+        .MuiCardContent-root {
+            width: 60%;
+            padding-bottom: 2.5rem;
+
+            .MuiTypography-h4 {
+                text-shadow: 4px 4px 18px black;
+                padding-bottom: 5rem;
+            }
+
+            .MuiTypography-body1 {
+                text-shadow: 4px 4px 12px black;
+            }
+        }
+    }
+
+    .MuiCard-root:nth-child(even) {
+        background: linear-gradient(36deg, rgba(147, 71, 156, 1) 48%, rgba(48, 186, 221, 1) 83%, rgba(114, 221, 210, 1) 97%) !important;
+    }
+
+    .MuiCard-root:nth-child(odd) {
+        background: linear-gradient(36deg, rgba(147, 71, 156, 1) 4%, rgba(48, 186, 221, 1) 35%, rgba(114, 221, 210, 1) 97%);
+    }
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+
+    .carousel-container_info {
+        padding-inline: 3.5rem;
+
+        .MuiTypography-h1 {
+            font-size: 5.2rem;
+            font-weight: 500;
+            padding: 4rem;
+            color: black;
+        }
+
+        .MuiTypography-h4 {}
     }
 }

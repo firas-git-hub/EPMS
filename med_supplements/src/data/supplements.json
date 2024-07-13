@@ -1,0 +1,152 @@
+{
+    "vitamins": [
+        {
+            "imgSrc": "/supplements/vitamins/vitamin_name_1.webp",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "25",
+            "title": "Vitamin A",
+            "distributor": "DistributorA"
+        },
+        {
+            "imgSrc": "/supplements/vitamins/vitamin_name_2.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "40",
+            "title": "Vitamin B",
+            "distributor": "DistributorA"
+        },
+        {
+            "imgSrc": "/supplements/vitamins/vitamin_name_3.webp",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "15",
+            "title": "Vitamin D",
+            "distributor": "DistributorA"
+        },
+        {
+            "imgSrc": "/supplements/vitamins/vitamin_name_4.webp",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "10",
+            "title": "Vitamin C",
+            "distributor": "DistributorB"
+        },
+        {
+            "imgSrc": "/supplements/vitamins/vitamin_name_5.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "8",
+            "title": "Vitamin D",
+            "distributor": "DistributorB"
+        }
+    ],
+    "minerals": [
+        {
+            "imgSrc": "/supplements/minerals/mineral_name_1.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "12.5",
+            "title": "Calcium",
+            "distributor": "DistributorB"
+        },
+        {
+            "imgSrc": "/supplements/minerals/mineral_name_2.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "8.75",
+            "title": "Magnesium",
+            "distributor": "DistributorB"
+        },
+        {
+            "imgSrc": "/supplements/minerals/mineral_name_3.webp",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "9.99",
+            "title": "Iron",
+            "distributor": "DistributorC"
+        },
+        {
+            "imgSrc": "/supplements/minerals/mineral_name_4.avif",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "12.99",
+            "title": "Magnesium",
+            "distributor": "DistributorC"
+        },
+        {
+            "imgSrc": "/supplements/minerals/mineral_name_5.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "13",
+            "title": "Zinc",
+            "distributor": "DistributorA"
+        },
+        {
+            "imgSrc": "/supplements/minerals/mineral_name_6.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "25",
+            "title": "Iron",
+            "distributor": "DistributorB"
+        },
+        {
+            "imgSrc": "/supplements/minerals/mineral_name_7.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "20",
+            "title": "Iron",
+            "distributor": "DistributorC"
+        }
+    ],
+    "aminoAcids": [
+        {
+            "imgSrc": "/supplements/aminoacids/aminoacid_name_1.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "65",
+            "title": "BCAA",
+            "distributor": "DistributorB"
+        },
+        {
+            "imgSrc": "/supplements/aminoacids/aminoacid_name_2.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "32",
+            "title": "Histidine",
+            "distributor": "DistributorC"
+        },
+        {
+            "imgSrc": "/supplements/aminoacids/aminoacid_name_3.webp",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "47",
+            "title": "BCAA",
+            "distributor": "DistributorA"
+        },
+        {
+            "imgSrc": "/supplements/aminoacids/aminoacid_name_4.png",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "42",
+            "title": "Tryptophan",
+            "distributor": "DistributorB"
+        },
+        {
+            "imgSrc": "/supplements/aminoacids/aminoacid_name_5.webp",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "42",
+            "title": "Glutamine",
+            "distributor": "DistributorC"
+        },
+        {
+            "imgSrc": "/supplements/aminoacids/aminoacid_name_6.webp",
+            "briefDescription": "This vitamin is essential for maintaining healthy vision, skin, and immune function.",
+            "description": "This vitamin is essential for maintaining healthy vision, skin, and immune function. It acts as an antioxidant, protecting cells from damage by free radicals. Found in colorful fruits and vegetables, it also supports collagen formation, wound healing, and overall tissue repair. Deficiency can lead to impaired immune response and skin issues. Regular intake through diet or supplements is important for optimal health.",
+            "price": "42",
+            "title": "Glutamine",
+            "distributor": "DistributorC"
+        }
+    ]
+}

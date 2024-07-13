@@ -33,3 +33,16 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
+.view {
+  max-height: 100vh;
+  width: auto;
+}
+
+.img-container {
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+}

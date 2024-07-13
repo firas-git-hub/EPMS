@@ -1,9 +1,11 @@
+"use client";
+
 import { FC } from "react";
 import "./navbar.scss";
 import React from "react";
 import { Button } from "@mui/material";
 import VaccinesIcon from "@mui/icons-material/Vaccines";
-import { useTranslation } from "react-i18next";
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
     children?: React.ReactNode;
@@ -12,46 +14,41 @@ interface NavbarProps {
 }
 
 
-
 const Navbar: FC<NavbarProps> = (props) => {
-
-    const { t } = useTranslation();
-
     let name = "Medi Products";
+    let pathname = usePathname();
     let pages = [
-        {
-            name: "About",
-            path: "about"
-        },
-        {
-            name: "Contact us",
-            path: "contactus"
-        },
-        {
-            name: "News",
-            path: "news"
-        },
         {
             name: "Home",
             path: "/"
         },
         {
+            name: "About",
+            path: "/about"
+        },
+        {
+            name: "Contact us",
+            path: "/contactus"
+        },
+        {
+            name: "News",
+            path: "/news"
+        },
+        {
             name: "Shop",
-            path: "shop"
-        }];
+            path: "/shop"
+        }
+    ];
 
     return (
-        <div className="flex--row navbar">
-            <div className="flex--row flagship">
-                <VaccinesIcon className="icon"></VaccinesIcon>
-                <p className="name unselectable" >
-                    {t(name)}
-                </p>
+        <div className="grid-container navbar">
+            <div className="grid-item flagship img-container">
+                <img src="/epms_logo_trnsprt_bg.png" />
             </div>
-            <div className="flex--row tabs">
+            <div className="nav-button grid-item flex--row tabs">
                 {
                     pages.map((element, index) =>
-                        <Button disableRipple key={index} href={element.path}>{element.name}</Button>
+                        <Button className={pathname == "" + element.path ? "active-tab" : ""} disableRipple key={index} href={element.path}>{element.name}</Button>
                     )
                 }
             </div>
