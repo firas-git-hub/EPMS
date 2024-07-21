@@ -1,18 +1,13 @@
 'use client';
 
 import "./page.scss";
-import { Button, IconButton, Typography } from "@mui/material";
-import supplementsData from "../data/supplements.json";
+import { IconButton, Typography } from "@mui/material";
+import homeTextData from "../data/home.json";
+import supplementsJsonData from "../data/supplements.json";
 import Carousel from "@/components/carousel/carousel";
-import type { carouselProps } from "@/components/carousel/carousel";
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import React from "react";
-import ClickableCard from "@/components/clickableCard/clickableCard";
-
-const mineralsData = supplementsData.minerals;
-const aminoAcidsData = supplementsData.aminoAcids;
-const vitaminsData = supplementsData.vitamins;
 
 
 let CarouselPrevButton = (props: any): JSX.Element => {
@@ -57,6 +52,7 @@ let CarouselNextButton = (props: any): React.JSX.Element => {
 	);
 }
 
+
 let carouselSettings = {
 	nextArrow: <CarouselNextButton className="carousel-button" />,
 	prevArrow: <CarouselPrevButton className="carousel-button" />,
@@ -64,46 +60,58 @@ let carouselSettings = {
 	dots: true
 }
 
-let vitaminsCarouselProps: carouselProps = {
-	settings: carouselSettings,
-	data: vitaminsData
-}
-
-let mineralsCarouselProps: carouselProps = {
-	settings: carouselSettings,
-	data: mineralsData
-}
-
-let aminoacidsCarouselProps: carouselProps = {
-	settings: carouselSettings,
-	data: aminoAcidsData
-}
+const supplementsData = [
+	{
+		supplementType: "Minerals",
+		settings: carouselSettings,
+		data: supplementsJsonData.minerals
+	},
+	{
+		supplementType: "Amino Acids",
+		settings: carouselSettings,
+		data: supplementsJsonData.aminoAcids
+	},
+	{
+		supplementType: "Vitamins",
+		settings: carouselSettings,
+		data: supplementsJsonData.vitamins
+	}
+]
 
 export default function Home() {
 	return (
 		<>
-			<div className="page view">
-				<div className="carousel-container">
-					<div className="carousel-container_info">
-						<Typography variant="h1">
-							Vitamins
-						</Typography>
+			<div className="page">
+				<div className="first-page fit-navbar-screen">
+					<div className="first-page__slogan">
+						<p className="main-title">
+							{homeTextData.firstPageMainTitle}
+						</p>
+						<p className="sub-title">
+							{homeTextData.firstPageSubTitle}
+						</p>
 					</div>
-					<Carousel {...vitaminsCarouselProps}>
-					</Carousel>
-				</div>
-				<div className="carousel-container">
-					<div className="carousel-container_info">
-						<Typography variant="h1">
-							Amino Acids
-						</Typography>
+					<div className="img-container">
+						<img src="supplement_pill.png" />
 					</div>
-					<Carousel {...aminoacidsCarouselProps}>
-					</Carousel>
 				</div>
-
-				{/* <Carousel {...mineralsCarouselProps}>
-				</Carousel> */}
+				<div className="bg--white">
+					{
+						supplementsData.map((item, index) => {
+							return <>
+								<div className="carousel-container">
+									<div className="carousel-container_info">
+										<Typography variant="h1">
+											{item.supplementType}
+										</Typography>
+									</div>
+									<Carousel data={item.data} settings={item.settings}>
+									</Carousel>
+								</div>
+							</>
+						})
+					}
+				</div>
 			</div>
 		</>
 	);

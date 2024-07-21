@@ -1,8 +1,8 @@
 .navbar {
     height: 4.5rem;
-    background: linear-gradient(145deg,
-            rgb(255, 255, 255) 9%,
-            rgba(48, 187, 173, 0.7) 30%);
+    background: linear-gradient(105deg,
+            rgb(255, 255, 255) 5%,
+            rgb(16, 69, 97) 30%);
 
     box-shadow: 0rem 0.5rem 1.5rem 0.15rem #d3d3d3d9;
     justify-content: center;
@@ -14,6 +14,10 @@
         padding-inline-start: 2rem;
     }
 
+    .img-container {
+        width: fit-content;
+    }
+
     .tabs {
         column-gap: 5rem;
 
@@ -23,6 +27,7 @@
             height: 100%;
             font-size: 1.15rem;
             padding: 0;
+            white-space: nowrap;
 
             &:hover {
                 color: rgba(255, 255, 255);

@@ -1,9 +1,41 @@
 .page {
     height: 100%;
     width: 100%;
-    max-height: calc(100% - 4.5rem);
     display: flex;
     flex-direction: column;
+    overflow: auto;
+}
+
+.first-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue;
+    position: relative;
+    min-height: 100%;
+
+    .first-page__slogan {
+        width: 50%;
+        padding-inline-start: 5rem;
+        color: #104561;
+
+        .main-title {
+            font-size: 5rem;
+            font-weight: 700;
+            margin: 0;
+            padding-block: 5rem;
+        }
+
+        .sub-title {
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+
+    .img-container {
+        height: 100%;
+        flex-basis: 50%;
+    }
 }
 
 .carousel-container:nth-child(even) {
@@ -16,7 +48,6 @@
     margin: 5rem;
     outline: 1px solid lightgray;
     box-shadow: 1px 1px 20px 1px #00000030;
-    background: linear-gradient(150deg, rgb(233, 233, 233) 54%, rgba(203, 182, 206, 0.69) 83%, rgba(184, 149, 188, 0.56) 93%, rgba(101, 6, 112, 0.25) 97%, rgba(101, 6, 112, 0.5) 100%)
 }
 
 .carousel-button {
@@ -29,33 +60,53 @@
     padding: 2rem;
 
     .MuiButtonBase-root {
-        color: skyblue;
+        color: #000000;
         -webkit-tap-highlight-color: unset !important;
 
         &:hover {
-            color: rgb(116, 177, 201);
+            color: #000000;
         }
 
         &:focus {
-            color: skyblue;
+            color: #000000;
         }
     }
 
     .slick-prev {
         width: auto !important;
         height: auto !important;
+        background-color: lightgrey;
+        z-index: 4;
 
         &::before {
             content: unset;
+        }
+
+        &:hover {
+            background-color: lightgrey;
+        }
+
+        &:focus {
+            background-color: lightgrey;
         }
     }
 
     .slick-next {
         width: auto !important;
         height: auto !important;
+        background-color: lightgrey;
+        z-index: 4;
 
         &::before {
             content: unset;
+        }
+    
+        &:hover {
+            background-color: lightgrey;
+        }
+
+        &:focus {
+            background-color: lightgrey;
         }
     }
 
@@ -113,12 +164,8 @@
         }
     }
 
-    .MuiCard-root:nth-child(even) {
-        background: linear-gradient(36deg, rgba(147, 71, 156, 1) 48%, rgba(48, 186, 221, 1) 83%, rgba(114, 221, 210, 1) 97%) !important;
-    }
-
-    .MuiCard-root:nth-child(odd) {
-        background: linear-gradient(36deg, rgba(147, 71, 156, 1) 4%, rgba(48, 186, 221, 1) 35%, rgba(114, 221, 210, 1) 97%);
+    .MuiCard-root {
+        background: linear-gradient(118deg, rgb(16, 69, 97) 1%, rgb(16, 69, 97) 82%, rgb(0, 0, 0) 99%);
     }
 }
 
@@ -129,6 +176,7 @@
 
     .carousel-container_info {
         padding-inline: 3.5rem;
+        display: flex;
 
         .MuiTypography-h1 {
             font-size: 5.2rem;
@@ -136,7 +184,13 @@
             padding: 4rem;
             color: black;
         }
+    }
 
-        .MuiTypography-h4 {}
+}
+
+.carousel-container:nth-child(even) {
+
+    .carousel-container_info {
+        justify-content: flex-end !important;
     }
 }
