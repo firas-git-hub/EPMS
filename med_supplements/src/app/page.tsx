@@ -7,7 +7,7 @@ import supplementsJsonData from "../data/supplements.json";
 import Carousel from "@/components/carousel/carousel";
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
-import React from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 
 
 let CarouselPrevButton = (props: any): JSX.Element => {
@@ -79,6 +79,18 @@ const supplementsData = [
 ]
 
 export default function Home() {
+	const [hideElements, setHideElements] = useState(window.innerWidth < 800 ? true : false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			window.innerWidth < 800 ? setHideElements(true) : setHideElements(false);
+		};
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
 	return (
 		<>
 			<div className="page">
@@ -91,15 +103,15 @@ export default function Home() {
 							{homeTextData.firstPageSubTitle}
 						</p>
 					</div>
-					<div className="img-container">
+					<div className={(hideElements ? "hidden" : "") + " img-container"}>
 						<img src="supplement_pill.png" />
 					</div>
 				</div>
 				<div className="bg--white">
 					{
 						supplementsData.map((item, index) => {
-							return <>
-								<div className="carousel-container">
+							return (
+								<div key={index} className="carousel-container">
 									<div className="carousel-container_info">
 										<Typography variant="h1">
 											{item.supplementType}
@@ -108,7 +120,7 @@ export default function Home() {
 									<Carousel data={item.data} settings={item.settings}>
 									</Carousel>
 								</div>
-							</>
+							)
 						})
 					}
 				</div>

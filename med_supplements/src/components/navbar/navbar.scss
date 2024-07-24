@@ -1,8 +1,9 @@
 .navbar {
     height: 4.5rem;
-    background: linear-gradient(105deg,
-            rgb(255, 255, 255) 5%,
-            rgb(16, 69, 97) 30%);
+    // background: linear-gradient(105deg,
+    //         rgb(255, 255, 255) 5%,
+    //         rgb(16, 69, 97) 30%);
+    background: linear-gradient(120deg, rgba(255, 255, 255, 1) 12%, rgba(22, 87, 121, 1) 37%, rgba(19, 78, 109, 1) 55%, rgba(16, 69, 97, 1) 70%);
 
     box-shadow: 0rem 0.5rem 1.5rem 0.15rem #d3d3d3d9;
     justify-content: center;
@@ -39,6 +40,17 @@
             color: white;
         }
     }
+
+    .drawer {
+        align-self: center;
+        justify-self: end;
+
+        .active-drawer-button {
+            .MuiTypography-root {
+                font-weight: bold !important;
+            }
+        }
+    }
 }
 
 .grid-container {
@@ -49,4 +61,43 @@
 .grid-item {
     min-width: 0;
     min-height: 0;
+}
+
+@media (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: 1fr 2.5fr;
+    }
+
+    .navbar {
+        .tabs {
+            column-gap: 2rem;
+
+            .MuiButton-root {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        .tabs {
+            column-gap: 2rem;
+
+            .MuiButton-root {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        background: linear-gradient(120deg,
+                rgb(255, 255, 255) 15%,
+                rgb(22, 87, 121) 41%,
+                rgb(19, 78, 109) 60%,
+                rgb(16, 69, 97) 70%);
+    }
 }

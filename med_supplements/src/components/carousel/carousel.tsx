@@ -29,19 +29,20 @@ const Carousel: FC<carouselProps> = (props) => {
                 {...props.settings}
                 responsive={[
                     {
-                        breakpoint: 1024,
+                        breakpoint: 1200,
                         settings: {
-                            slidesToShow: 1,
+                            slidesToShow: 2,
                             slidesToScroll: 1,
-                            initialSlide: 1,
-                            vertical: true
+
                         }
                     },
                     {
-                        breakpoint: 480,
+                        breakpoint: 992,
                         settings: {
                             slidesToShow: 1,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,
+                            vertical: true,
+                            verticalSwiping: true
                         }
                     }
                 ]}

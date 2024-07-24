@@ -61,6 +61,20 @@ body {
 	min-height: calc(100% - 4.5rem);
 }
 
-.diagonal-seperator {
-	
+.hidden {
+	display: none;
+}
+
+.nav-menu {
+    .MuiPaper-root {
+		.active-drawer-button {
+			.MuiTypography-root {
+				font-weight: 700;
+			}
+		}
+
+		.MuiSvgIcon-root {
+			color: #104561;
+		}
+    }
 }

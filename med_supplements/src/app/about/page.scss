@@ -7,7 +7,7 @@ $secondary-color: black;
     justify-content: flex-start;
     align-items: center;
     overflow: auto;
-    padding-inline: 2.5rem;
+    padding-inline: 5rem;
     background-color: aliceblue;
 
 
@@ -107,11 +107,12 @@ $secondary-color: black;
                 min-width: 8rem;
                 flex-shrink: 0;
                 z-index: 1;
+                align-content: center;
             }
 
             .diagonal-seperator {
                 transform: skew(20deg, 0deg) translateX(-50%);
-                width: 15%;
+                width: 7%;
                 background-color: $main-color;
                 z-index: 0;
                 flex-shrink: 0;

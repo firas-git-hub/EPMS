@@ -7,11 +7,13 @@ export default function aboutUs() {
         <>
             <div className="about-us-page fit-navbar-screen">
                 <div className="about-us-section">
-                    <p className="title">
-                        {
-                            aboutUsData.aboutUsSection.title
-                        }
-                    </p>
+                    <div className="header">
+                        <p className="title">
+                            {
+                                aboutUsData.aboutUsSection.title
+                            }
+                        </p>
+                    </div>
                     {
                         aboutUsData.aboutUsSection.content.map((contentItem, index) => {
                             return <>
