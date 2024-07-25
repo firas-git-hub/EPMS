@@ -22,30 +22,8 @@ interface NavbarProps {
 
 const Navbar: FC<NavbarProps> = (props) => {
 
-    let name = "Medi Products";
     let pathname = usePathname();
-    let pages = [
-        {
-            name: "home",
-            path: "/"
-        },
-        {
-            name: "about",
-            path: "/about"
-        },
-        {
-            name: "contactus",
-            path: "/contactus"
-        },
-        {
-            name: "news",
-            path: "/news"
-        },
-        {
-            name: "shop",
-            path: "/shop"
-        }
-    ];
+    let pages = jsonData.pages;
 
     const [open, setOpen] = React.useState(false);
 
@@ -61,7 +39,6 @@ const Navbar: FC<NavbarProps> = (props) => {
         shop: <StorefrontIcon />
     }
 
-    let data: any = jsonData;
 
     const DrawerList = (
         <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
@@ -70,9 +47,9 @@ const Navbar: FC<NavbarProps> = (props) => {
                     <ListItem key={index} disablePadding className={pathname == "" + element.path ? "active-drawer-button" : ""}>
                         <ListItemButton href={element.path}>
                             <ListItemIcon>
-                                {homeMenuIcons[element.name] ? homeMenuIcons[element.name] : ""}
+                                {homeMenuIcons[element.propName] ? homeMenuIcons[element.propName] : ""}
                             </ListItemIcon>
-                            <ListItemText primary={data[element.name]} />
+                            <ListItemText primary={element.name} />
                         </ListItemButton>
                     </ListItem>
                 ))}

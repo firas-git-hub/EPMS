@@ -1,7 +1,29 @@
 {
-    "home": "Home",
-    "about": "About", 
-    "contactus": "Contact Us",
-    "news": "News",
-    "shop": "Shop"
+    "pages": [
+        {
+            "propName": "home",
+            "name": "Home",
+            "path": "/"
+        },
+        {
+            "propName": "about",
+            "name": "About",
+            "path": "/about"
+        },
+        {
+            "propName": "contactus",
+            "name": "Contact Us",
+            "path": "/contactus"
+        },
+        {
+            "propName": "news",
+            "name": "News",
+            "path": "/news"
+        },
+        {
+            "propName": "shop",
+            "name": "Shop",
+            "path": "/shop"
+        }
+    ]
 }
