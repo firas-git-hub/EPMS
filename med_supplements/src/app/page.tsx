@@ -79,7 +79,12 @@ const supplementsData = [
 ]
 
 export default function Home() {
-	const [hideElements, setHideElements] = useState(window.innerWidth < 800 ? true : false);
+	
+	let initialHideElementsCondition = false;
+	if(typeof window != undefined) {
+		initialHideElementsCondition = window.innerWidth < 800;
+	}
+	const [hideElements, setHideElements] = useState(initialHideElementsCondition);
 
 	useEffect(() => {
 		const handleResize = () => {

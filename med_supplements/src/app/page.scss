@@ -123,7 +123,7 @@
 
         .supplements-card-image-container {
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             height: 100%;
             width: 100%;
             position: absolute;
@@ -141,7 +141,7 @@
             color: white;
             display: flex;
             justify-content: start;
-            align-items: end;
+            align-items: flex-end;
             transition: backdrop-filter 0.25s ease-in-out;
 
             &:hover {
