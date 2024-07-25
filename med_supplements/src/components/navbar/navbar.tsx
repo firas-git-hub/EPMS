@@ -21,17 +21,6 @@ interface NavbarProps {
 
 
 const Navbar: FC<NavbarProps> = (props) => {
-    const [useMenu, setUseMenu] = useState(false);
-    useEffect(() => {
-        window.innerWidth < 650 ? setUseMenu(true) : setUseMenu(false);
-        const handleResize = () => {
-            window.innerWidth < 650 ? setUseMenu(true) : setUseMenu(false);
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     let name = "Medi Products";
     let pathname = usePathname();
@@ -96,14 +85,14 @@ const Navbar: FC<NavbarProps> = (props) => {
             <div className="grid-item flagship img-container">
                 <img src="/epms_logo_trnsprt_bg.png" />
             </div>
-            <div className={(useMenu ? "hidden" : "") + " nav-button grid-item flex--row tabs"}>
+            <div className={"nav-button grid-item flex--row tabs"}>
                 {
                     pages.map((element, index) =>
                         <Button className={pathname == "" + element.path ? "active-tab" : ""} disableRipple key={index} href={element.path}>{element.name}</Button>
                     )
                 }
             </div>
-            <div className={(useMenu ? "" : "hidden") + " drawer"}>
+            <div className={"drawer"}>
                 <Button
                     sx={{
                         color: "white"

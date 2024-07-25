@@ -76,6 +76,11 @@
                 font-size: 1rem;
             }
         }
+
+        .nav-button {
+            display: none;
+        }
+
     }
 }
 
@@ -99,5 +104,11 @@
                 rgb(22, 87, 121) 41%,
                 rgb(19, 78, 109) 60%,
                 rgb(16, 69, 97) 70%);
+    }
+}
+
+@media (min-width: 850px) {
+    .drawer {
+        display: none;
     }
 }
