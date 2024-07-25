@@ -21,12 +21,9 @@ interface NavbarProps {
 
 
 const Navbar: FC<NavbarProps> = (props) => {
-    let initialUseMenuCondition = false;
-	if(typeof window != undefined) {
-		initialUseMenuCondition = window.innerWidth < 650;
-	}
-    const [useMenu, setUseMenu] = useState(initialUseMenuCondition);
+    const [useMenu, setUseMenu] = useState(false);
     useEffect(() => {
+        window.innerWidth < 650 ? setUseMenu(true) : setUseMenu(false);
         const handleResize = () => {
             window.innerWidth < 650 ? setUseMenu(true) : setUseMenu(false);
         };
