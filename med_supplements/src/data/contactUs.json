@@ -1,0 +1,25 @@
+{
+    "infoSection": {
+        "title": "About Us",
+        "paragraphs": [
+            {
+                "text": "EPMS (Enterprise Pharmaceutical and Medical Supplies S.A.L) is a family-owned business with deep roots in the medical field, established in 1976. Our shareholders, integral members of the medical community, have built a reputation for reliability and trust through decades of dedicated service.",
+                "imgSrc": "/about_handshake.svg",
+                "paragraphListType": "paragraph"
+            },
+            {
+                "text": "Founded in 2022, EPMS operates in the MENA region, swiftly gaining recognition and respect within the medical community. Our primary goal is to support our country and the region with essential pharmaceutical, medical, and cosmetic supplies, promoting a healthy lifestyle despite economic challenges.",
+                "imgSrc": "/about_foundation.svg",
+                "paragraphListType": "paragraph"
+            },
+            {
+                "text": "We specialize in distributing high-quality healthcare products, dietary supplements, and cosmetics across Lebanon. Our products reach consumers through pharmacies, hospitals, dispensaries, physicians, retailers, and governmental medical institutions.",
+                "imgSrc": "/about_supplements.svg",
+                "paragraphListType": "paragraph"
+            }
+        ]
+    },
+    "formSection": {
+        
+    }
+}

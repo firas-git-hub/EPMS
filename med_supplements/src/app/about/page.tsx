@@ -1,8 +1,13 @@
 import "./page.scss";
 import aboutUsData from "../../data/aboutUs.json";
 import { Card, CardContent } from "@mui/material";
+import JsonParagraphsDataFormatService from "@/services/JsonParagraphsHelper";
 
 export default function aboutUs() {
+    let numberedListItemCounterObj = {
+        index: 1
+    };
+
     return (
         <>
             <div className="about-us-page fit-navbar-screen">
@@ -14,30 +19,27 @@ export default function aboutUs() {
                             }
                         </p>
                     </div>
-                    {
-                        aboutUsData.aboutUsSection.content.map((contentItem, index) => {
-                            return <>
-                                <div className="about-us-section_content page" key={index}>
+                    <div className="about-us-section_content page">
+                        {
+                            aboutUsData.aboutUsSection.paragraphs.map((paragraph, index) => {
+                                return <>
                                     {
-                                        contentItem.elements.map((element, index) => {
-                                            return <>
-                                                <Card key={index}>
-                                                    <CardContent>
-                                                        <div className="img-container">
-                                                            <img src={element.imgSrc} />
-                                                        </div>
-                                                        <p>
-                                                            {element.text}
-                                                        </p>
-                                                    </CardContent>
-                                                </Card>
-                                            </>
-                                        })
+
+                                        <Card key={index}>
+                                            <CardContent>
+                                                <div className="img-container">
+                                                    <img src={paragraph.imgSrc} />
+                                                </div>
+                                                {
+                                                    JsonParagraphsDataFormatService.formatJsonDataText(index, paragraph, numberedListItemCounterObj, "")
+                                                }
+                                            </CardContent>
+                                        </Card>
                                     }
-                                </div>
-                            </>
-                        })
-                    }
+                                </>
+                            })
+                        }
+                    </div>
                 </div>
                 <div className="sections">
                     {
@@ -49,15 +51,9 @@ export default function aboutUs() {
                                     </p>
                                     <div className="diagonal-seperator"></div>
                                     <div className="content">
-                                        {section.content.map((item, index) => {
-                                            return <>
-                                                <p className="text">
-                                                    {
-                                                        getSymbol(item.type) + item.text
-                                                    }
-                                                </p>
-                                            </>
-                                        })}
+                                        {
+                                            section.paragraphs.map((paragraph, index) => JsonParagraphsDataFormatService.formatJsonDataText(index, paragraph, numberedListItemCounterObj, "text"))
+                                        }
                                     </div>
                                 </div>
                             </>

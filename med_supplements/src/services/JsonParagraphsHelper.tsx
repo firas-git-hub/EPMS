@@ -22,7 +22,7 @@ export default class JsonParagraphsDataFormatService {
     }
 
     //I passed the index as object so the argument taken by the function would be taken by reference. this means that i can change the object through the function.
-    public static getListSymbol = (listSubitemIndexObj: { index: number }, paragraphListType: ParagraphsListTypeEnum | string = ""): string => {
+    private static getListSymbol = (listSubitemIndexObj: { index: number }, paragraphListType: ParagraphsListTypeEnum | string = ""): string => {
         let returnVal = "";
 
         if (paragraphListType == ParagraphsListTypeEnum.numbered) {

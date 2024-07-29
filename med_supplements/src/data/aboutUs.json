@@ -1,60 +1,61 @@
 {
     "aboutUsSection": {
         "title": "About Us",
-        "content": [
+        "paragraphs": [
             {
-                "elements": [
-                    {
-                        "text": "EPMS (Enterprise Pharmaceutical and Medical Supplies S.A.L) is a family-owned business with deep roots in the medical field, established in 1976. Our shareholders, integral members of the medical community, have built a reputation for reliability and trust through decades of dedicated service.",
-                        "imgSrc": "/about_handshake.svg"
-                    },
-                    {
-                        "text": "Founded in 2022, EPMS operates in the MENA region, swiftly gaining recognition and respect within the medical community. Our primary goal is to support our country and the region with essential pharmaceutical, medical, and cosmetic supplies, promoting a healthy lifestyle despite economic challenges.",
-                        "imgSrc": "/about_foundation.svg"
-                    },
-                    {
-                        "text": "We specialize in distributing high-quality healthcare products, dietary supplements, and cosmetics across Lebanon. Our products reach consumers through pharmacies, hospitals, dispensaries, physicians, retailers, and governmental medical institutions.",
-                        "imgSrc": "/about_supplements.svg"
-                    }
-                ],
-                "type": "paragraph"
+                "content": "EPMS (Enterprise Pharmaceutical and Medical Supplies S.A.L) is a family-owned business with deep roots in the medical field, established in 1976. Our shareholders, integral members of the medical community, have built a reputation for reliability and trust through decades of dedicated service.",
+                "imgSrc": "/about_handshake.svg",
+                "paragraphListType": ""
+            },
+            {
+                "content": "Founded in 2022, EPMS operates in the MENA region, swiftly gaining recognition and respect within the medical community. Our primary goal is to support our country and the region with essential pharmaceutical, medical, and cosmetic supplies, promoting a healthy lifestyle despite economic challenges.",
+                "imgSrc": "/about_foundation.svg",
+                "paragraphListType": ""
+            },
+            {
+                "content": "We specialize in distributing high-quality healthcare products, dietary supplements, and cosmetics across Lebanon. Our products reach consumers through pharmacies, hospitals, dispensaries, physicians, retailers, and governmental medical institutions.",
+                "imgSrc": "/about_supplements.svg",
+                "paragraphListType": ""
             }
         ]
     },
     "sections": [
         {
             "title": "Mission",
-            "content": [
+            "paragraphs": [
                 {
-                    "text": [
-                        "Our mission is to provide high-quality, affordable pharmaceutical, medical, and cosmetic supplies to support health and wellness in our communities. We are committed to ensuring the availability of essential products through efficient logistics, exceptional customer service, and a synchronized supply chain that guarantees accessibility in both regional and local markets."
-                    ],
-                    "type": "paragraph"
+                    "content": "Our mission is to provide high-quality, affordable pharmaceutical, medical, and cosmetic supplies to support health and wellness in our communities. We are committed to ensuring the availability of essential products through efficient logistics, exceptional customer service, and a synchronized supply chain that guarantees accessibility in both regional and local markets.",
+                    "paragraphListType": ""
                 }
             ]
         },
         {
             "title": "Vision",
-            "content": [
+            "paragraphs": [
                 {
-                    "text": [
-                        "Our vision is to become the preferred partner for pharmaceutical, medical, and cosmetic supply distribution in the Middle East and Africa. We aim to be recognized for our unwavering commitment to quality, reliability, and community support, contributing to healthier and more vibrant lives."
-                    ],
-                    "type": "paragraph"
+                    "content": "Our vision is to become the preferred partner for pharmaceutical, medical, and cosmetic supply distribution in the Middle East and Africa. We aim to be recognized for our unwavering commitment to quality, reliability, and community support, contributing to healthier and more vibrant lives.",
+                    "paragraphListType": ""
                 }
             ]
         },
         {
             "title": "Values",
-            "content": [
+            "paragraphs": [
                 {
-                    "text": [
-                        "Quality: We prioritize the highest standards in all our products and services.",
-                        "Integrity: We operate with honesty and transparency in every aspect of our business.",
-                        "Customer-Centric: We are dedicated to understanding and meeting the needs of our customers.",
-                        "Innovation: We continuously seek to improve our processes and product offerings."
-                    ],
-                    "type": "list"
+                    "content": "<b>Quality:</b> We prioritize the highest standards in all our products and services.",
+                    "paragraphListType": "bulletPoint"
+                },
+                {
+                    "content": "<b>Integrity:</b> We operate with honesty and transparency in every aspect of our business.",
+                    "paragraphListType": "bulletPoint"
+                },
+                {
+                    "content": "<b>Customer-Centric:</b> We are dedicated to understanding and meeting the needs of our customers.",
+                    "paragraphListType": "bulletPoint"
+                },
+                {
+                    "content": "<b>Innovation:</b> We continuously seek to improve our processes and product offerings.",
+                    "paragraphListType": "bulletPoint"
                 }
             ]
         }
