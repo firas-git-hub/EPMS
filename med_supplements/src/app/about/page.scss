@@ -97,6 +97,7 @@ $secondary-color: black;
             color: $main-color;
             background-color: white;
             border-radius: 1rem;
+            position: relative;
             overflow: hidden;
 
             .title {
@@ -165,12 +166,9 @@ $secondary-color: black;
 @media (max-width: 1400px) {
     .about-us-page {
         padding-inline: 1rem;
+
         .about-us-section {
             justify-content: space-evenly;
-
-            .title {
-                font-size: 4rem;
-            }
 
             .about-us-section_content {
 
@@ -188,10 +186,6 @@ $secondary-color: black;
 
         .sections {
             .section {
-                // .title {
-                //     font-size: 2.5rem;
-                // }
-
                 .content {
                     p {
                         font-size: 1.15rem;
@@ -206,6 +200,12 @@ $secondary-color: black;
 
 @media (min-width: 450px) and (max-width:1399px) {
     .about-us-page {
+        .about-us-section {
+            .title {
+                font-size: 4rem;
+            }
+        }
+
         .sections {
             .section {
                 .title {
@@ -254,9 +254,14 @@ $secondary-color: black;
 @media (max-width: 450px) {
     .about-us-page {
         .about-us-section {
+            .title {
+                font-size: 3rem;
+                padding: 2rem 1rem;
+            }
+
             .about-us-section_content {
                 .MuiCardContent-root {
-                    padding: 2rem;
+                    padding: 0.5rem 2rem;
                 }
             }
         }
@@ -264,6 +269,7 @@ $secondary-color: black;
         .sections {
             .section {
                 width: 100%;
+
                 .title {
                     padding: 0.5rem;
                     font-size: 2rem;
