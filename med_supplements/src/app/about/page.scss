@@ -111,9 +111,12 @@ $secondary-color: black;
                 flex-shrink: 0;
                 z-index: 1;
                 //these exist to attempt to fix on safari browser, some properties are not supported on different browsers
-                align-content: center;
                 text-align: center;
                 place-content: center;
+                border-start-start-radius: 1rem;
+                border-end-start-radius: 1rem;
+                display: flex;
+                align-items: center;
             }
 
             .diagonal-seperator {
@@ -131,6 +134,9 @@ $secondary-color: black;
                 padding: 0.5rem;
                 align-items: flex-start;
                 z-index: 1;
+                //these exist to attempt to fix on safari browser, some properties are not supported on different browsers
+                border-start-end-radius: 1rem;
+                border-end-end-radius: 1rem;
 
                 p {
                     font-size: 1.5rem;
@@ -186,15 +192,8 @@ $secondary-color: black;
 
         .sections {
             .section {
-                .title {
-                    // fix for safari browser for border radius, overflow hidden was not working
-                    border-start-start-radius: 1rem;
-                    border-end-start-radius: 1rem;
-                }
                 .content {
-                    // fix for safari browser for border radius, overflow hidden was not working
-                    border-start-end-radius: 1rem;
-                    border-end-end-radius: 1rem;
+
                     p {
                         font-size: 1.15rem;
                         font-weight: 300;
