@@ -186,7 +186,15 @@ $secondary-color: black;
 
         .sections {
             .section {
+                .title {
+                    // fix for safari browser for border radius, overflow hidden was not working
+                    border-start-start-radius: 1rem;
+                    border-end-start-radius: 1rem;
+                }
                 .content {
+                    // fix for safari browser for border radius, overflow hidden was not working
+                    border-start-end-radius: 1rem;
+                    border-end-end-radius: 1rem;
                     p {
                         font-size: 1.15rem;
                         font-weight: 300;
