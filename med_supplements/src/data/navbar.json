@@ -14,16 +14,6 @@
             "propName": "contactus",
             "name": "Contact",
             "path": "/contactus"
-        },
-        {
-            "propName": "news",
-            "name": "News",
-            "path": "/news"
-        },
-        {
-            "propName": "shop",
-            "name": "Shop",
-            "path": "/shop"
         }
     ]
 }
