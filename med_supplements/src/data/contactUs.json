@@ -1,25 +1,102 @@
 {
     "infoSection": {
-        "title": "About Us",
-        "paragraphs": [
+        "title": "Reach Out To Us",
+        "locationLink": "https://www.google.com/maps/place/Alaaeddine+Hospital/@33.45967,35.288912,18.17z/data=!4m6!3m5!1s0x151ef4b10777aea3:0xffd8bd180ec116f3!8m2!3d33.4597435!4d35.2893823!16s%2Fg%2F1tg5fbgq?entry=ttu",
+        "infos": [
             {
-                "text": "EPMS (Enterprise Pharmaceutical and Medical Supplies S.A.L) is a family-owned business with deep roots in the medical field, established in 1976. Our shareholders, integral members of the medical community, have built a reputation for reliability and trust through decades of dedicated service.",
-                "imgSrc": "/about_handshake.svg",
-                "paragraphListType": "paragraph"
+                "title": "Email",
+                "imgSrc": "/email.svg",
+                "paragraphs": [
+                    {
+                        "content": "epms.lb@gmail.com",
+                        "paragraphListType": ""
+                    },
+                    {
+                        "content": "Info@epmslb.com",
+                        "paragraphListType": ""
+                    }
+                ]
             },
             {
-                "text": "Founded in 2022, EPMS operates in the MENA region, swiftly gaining recognition and respect within the medical community. Our primary goal is to support our country and the region with essential pharmaceutical, medical, and cosmetic supplies, promoting a healthy lifestyle despite economic challenges.",
-                "imgSrc": "/about_foundation.svg",
-                "paragraphListType": "paragraph"
+                "title": "Address",
+                "imgSrc": "/location.svg",
+                "paragraphs": [
+                    {
+                        "content": "Alaeddine Bldg, Sarafand, Lebanon",
+                        "paragraphListType": ""
+                    }
+                ]
             },
             {
-                "text": "We specialize in distributing high-quality healthcare products, dietary supplements, and cosmetics across Lebanon. Our products reach consumers through pharmacies, hospitals, dispensaries, physicians, retailers, and governmental medical institutions.",
-                "imgSrc": "/about_supplements.svg",
-                "paragraphListType": "paragraph"
+                "title": "Phone",
+                "imgSrc": "/phone.svg",
+                "paragraphs": [
+                    {
+                        "content": "+ 961 3 87 60 98",
+                        "paragraphListType": ""
+                    },
+                    {
+                        "content": "+ 961 81 61 71 78",
+                        "paragraphListType": ""
+                    },
+                    {
+                        "content": "+ 961 70 28 00 45",
+                        "paragraphListType": ""
+                    }
+                ]
             }
         ]
     },
     "formSection": {
-        
+        "title": "Send us a message",
+        "paragraphs": [
+            {
+                "content": "Let us know what you think of our products.",
+                "paragraphListType": ""
+            },
+            {
+                "content": "If there is anything we can help you with, we are just a message away.",
+                "paragraphListType": ""
+            }
+        ],
+        "forms": {
+            "fname": {
+                "label": "First Name",
+                "placeholder": "Enter your first name",
+                "formControlProps": {
+                    "variant": "filled"
+                }
+            },
+            "lname": {
+                "label": "Last Name",
+                "placeholder": "Enter your last name",
+                "formControlProps": {
+                    "variant": "filled"
+                }
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Enter your email address",
+                "formControlProps": {
+                    "variant": "filled"
+                }
+            },
+            "phone": {
+                "label": "Phone Number",
+                "placeholder": "Enter your phone number",
+                "formControlProps": {
+                    "variant": "filled"
+                }
+            },
+            "msg": {
+                "label": "Message",
+                "placeholder": "Enter your message",
+                "formControlProps": {
+                    "variant": "filled",
+                    "multiline": "true",
+                    "rows": "4"
+                }
+            }
+        }
     }
 }
