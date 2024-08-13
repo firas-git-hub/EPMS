@@ -1,0 +1,13 @@
+.form-submit-button {
+    color: white;
+    background-color: steelblue;
+    font-size: 1rem;
+
+    &:hover {
+        background-color: rgb(63, 119, 165);
+    }
+
+    &:disabled {
+        background-color: lightgray;
+    }
+}
