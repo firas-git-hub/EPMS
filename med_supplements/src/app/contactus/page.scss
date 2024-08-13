@@ -24,6 +24,7 @@ $main-color_text-color: white;
         flex-direction: column;
         justify-content: space-evenly;
         padding-inline: 5rem;
+        padding-bottom: 2rem;
 
         .content {
             display: flex;
@@ -38,6 +39,7 @@ $main-color_text-color: white;
                 align-items: center;
                 justify-content: flex-start;
                 gap: 1.5rem;
+                flex-shrink: 0.25;
 
                 .title {
                     font-weight: 500;
@@ -57,6 +59,10 @@ $main-color_text-color: white;
                     &:hover {
                         cursor: pointer;
                     }
+                }
+
+                &.phone {
+                    white-space: nowrap;
                 }
 
                 .img-container {
@@ -126,7 +132,7 @@ $main-color_text-color: white;
         .form {
             padding: 2rem;
             flex-basis: 50%;
-
+            box-sizing: border-box;
 
             .MuiBox-root {
                 display: flex;
@@ -140,5 +146,82 @@ $main-color_text-color: white;
             }
         }
 
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1225px) {
+
+    .contactus {
+        .title {
+            font-size: 3.5rem;
+            padding-inline: unset;
+        }
+    }
+}
+
+@media (max-width: 899px) {
+
+    .contactus {
+
+        .title {
+            font-size: 2rem;
+            padding-inline: unset;
+        }
+
+        .contactus-info {
+            gap: 5rem;
+            min-height: auto;
+            padding-inline: 2rem;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+
+                .block {
+                    img {
+                        max-width: 4rem;
+                    }
+                }                
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contactus {
+        .contactus-form {
+            min-height: unset;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .content {
+                .title {
+                    font-size: 2rem;
+                }
+
+                .content__phrase {
+                    font-size: 1rem;
+                }
+            }
+
+            .form {
+                width: 100%;
+                flex-basis: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contactus {
+        .contactus-form {
+            .content {
+                .title {
+                    font-size: 2rem;
+                    white-space: break-spaces;
+                }
+            }
+        }
     }
 }
