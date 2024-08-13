@@ -30,8 +30,12 @@ const ContactUsForm: FC<{}> = () => {
             let regex = new RegExp(data.formSection.forms[name]["regex"]);
             regex.test(value) ? errorVal = false : errorVal = true;
         }
-        else if (data.formSection.forms[name].required == true && value == "") {
-            errorVal = true;
+        else if (data.formSection.forms[name].required == true) {
+            if (value == "")
+                errorVal = true;
+            else {
+                errorVal = false;
+            }
         }
         if ((typeof data.formSection.forms[name].required == "undefined" || data.formSection.forms[name].required == false) && value == "") {
             errorVal = false;
