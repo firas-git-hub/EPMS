@@ -60,7 +60,9 @@ const Navbar: FC<NavbarProps> = (props) => {
     return (
         <div className="grid-container navbar">
             <div className="grid-item flagship img-container">
-                <img src="/epms_logo_trnsprt_bg.png" />
+                <a href="/">
+                    <img src="/epms_logo_trnsprt_bg.png" />
+                </a>
             </div>
             <div className={"nav-button grid-item flex--row tabs"}>
                 {
