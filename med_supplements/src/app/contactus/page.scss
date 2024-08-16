@@ -25,6 +25,7 @@ $main-color_text-color: white;
         justify-content: space-evenly;
         padding-inline: 5rem;
         padding-bottom: 2rem;
+        box-sizing: border-box;
 
         .content {
             display: flex;

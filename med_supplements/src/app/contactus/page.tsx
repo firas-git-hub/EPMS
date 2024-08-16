@@ -42,7 +42,7 @@ export default function contactUs() {
                     }
                 </div>
             </div>
-            <div className="contactus-form fit-navbar-screen">
+            {/* <div className="contactus-form fit-navbar-screen">
                 <div className="content">
                     <p className="title">{jsonData.formSection.title}</p>
                     {
@@ -52,7 +52,7 @@ export default function contactUs() {
                 <div className="form">
                     <ContactUsForm></ContactUsForm>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
