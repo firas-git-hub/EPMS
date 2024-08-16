@@ -183,6 +183,7 @@
             font-weight: 500;
             padding: 4rem;
             color: black;
+            white-space: nowrap;
         }
     }
 
@@ -191,7 +192,7 @@
 .carousel-container:nth-child(even) {
 
     .carousel-container_info {
-        justify-content: flex-end !important;
+        justify-content: flex-end;
     }
 }
 
@@ -227,9 +228,24 @@
             display: none;
         }
     }
+    .carousel-container {
+
+        &:nth-child(even) {
+            .carousel-container_info {
+                justify-content: flex-start;
+            } 
+        }
+        .carousel-container_info {
+            padding-inline: 1.5rem;
+
+            h1 {
+                padding: 3rem;
+            }
+        }
+    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .first-page {
         .first-page__slogan {
             .main-title {
